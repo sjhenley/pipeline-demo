@@ -8,7 +8,7 @@
     "test:cov": "jest --coverage",
     "start": "nodemon --exec ts-node src/index.ts",
     "start:prod": "npm run build && node grubdash.js",
-    "lint": "eslint **",
+    "lint": "eslint ** --no-error-on-unmatched-pattern",
     "lint:fix": "eslint ** --fix",
     "tsc": "tsc",
     "build": "esbuild src/index.ts --bundle --minify --platform=node --sourcemap --outfile=grubdash.js",
