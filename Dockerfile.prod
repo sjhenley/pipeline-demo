@@ -11,7 +11,7 @@ RUN npm ci
 
 RUN npm run build
 
-FROM node:lts-slim AS runner
+FROM node:lts-alpine AS runner
 
 WORKDIR /app
 
